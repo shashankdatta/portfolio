@@ -23,6 +23,7 @@
   "All Projects": [
     {
       "name": "AutoTrust",
+      "highlight": "1st Place: Blockchain",
       "desc": "A decentralized car marketplace on Solana enabling secure vehicle ownership transfers and much more. No middlemen, no hidden fees—just trust, speed, and transparency. Won 1st place in the Solana & Blockchain Innovation track at HackNYU 2025.",
       "techStack": "TypeScript, Solana, Rust, Anchor, Next.js, FastAPI, MongoDB, OpenAI",
       "link": "https://github.com/shashankdatta/AutoTrust",
@@ -30,6 +31,7 @@
     },
     {
       "name": "Secure Surf",
+      "highlight": "1st Place: Data Science",
       "desc": "A web app that generates a domain security score using breach and password-compromise signals. Won 1st place for Best Data Science Hack at UVA HooHacks 2023.",
       "techStack": "JavaScript, OpenAI, LangChain, React, Next.js, MongoDB, Chakra UI",
       "link": "https://github.com/shashankdatta/Secure-Surf",
@@ -37,6 +39,7 @@
     },
     {
       "name": "RoutePals",
+      "highlight": "Capstone",
       "desc": "A safety travel companion platform built for 60,000+ NYU students, enabling real-time location tracking, route matching, and chat/alerts to reduce solo travel risk.",
       "techStack": "Python, Django, PostgreSQL, AWS, WebSockets, Leaflet.js, Uber H3, Bootstrap, ZenHub, Travis CI, Coveralls.io",
       "link": "https://github.com/shashankdatta/RoutePals",
@@ -44,6 +47,7 @@
     },
     {
       "name": "G-Helper: Caffeinated",
+      "highlight": "Open-Source Contribution",
       "desc": "An open-source contribution to G-Helper (3.5k+ stars), adding a 'Caffeinated' mode that temporarily prevents system sleep via the Windows SetThreadExecutionState API, with configurable duration, keyboard shortcut support, and full localization integration.",
       "techStack": "C#, .NET, Windows API, P/Invoke",
       "link": "https://github.com/shashankdatta/g-helper/tree/caffeinated",
@@ -51,6 +55,7 @@
     },
     {
       "name": "MeddyAI",
+      "highlight": "Gemini AI Competition",
       "desc": "A voice-first medical AI assistant bridging patient-doctor communication gaps with multilingual Q&A, real-time speech-to-speech translation, and personalized health insights via Gemini's 2M token context window. Finalist in the Google Gemini API Developer Competition 2024.",
       "techStack": "Flutter, Node.js, Firebase, PostgreSQL, Google Gemini API, Google Fit, Epic",
       "link": "https://github.com/shashankdatta/Meddy",
@@ -58,6 +63,7 @@
     },
     {
       "name": "SWAP",
+      "highlight": "Capstone",
       "desc": "A peer-to-peer course trading platform to serve over 37,000 Virginia Tech students, reducing course schedule management time by 70%.",
       "techStack": "JavaScript, MongoDB, Node.js, React.js, Material UI, Vercel",
       "link": "https://github.com/rmruss2022/SWAP",
@@ -65,6 +71,7 @@
     },
     {
       "name": "Jobly",
+      "highlight": "Capstone",
       "desc": "A big data job search platform leveraging Spark and OpenAI LLM to deliver personalized job recommendations, skill trend analysis, and natural language querying of large-scale job market data.",
       "techStack": "Python, Spark, Spark NLP, YAKE, Flask, OpenAI API, LangChain, Streamlit, Oxylabs API",
       "link": "https://github.com/shashankdatta/job-market-analysis",
@@ -72,7 +79,7 @@
     },
     {
       "name": "Portfolio",
-      "title": "Portfolio",
+      "highlight": "",
       "desc": "A portfolio website to exhibit and highlight my professional accomplishments, projects, creative abilities, and technical expertise, providing a comprehensive showcase of my skills and achievements.",
       "techStack": "JavaScript, Next.js, Rsuite.js, Node.js, React.js, Material UI, GitHub Pages",
       "link": "https://github.com/shashankdatta/Portfolio.git",
@@ -80,6 +87,7 @@
     },
     {
       "name": "Synthwave",
+      "highlight": "",
       "desc": "An iOS app enabling users to read and write Mifare NFC cards for contactless sharing of resumes, contact information, and social media profiles.",
       "techStack": "Swift, SwiftUI, Core Data, Xcode",
       "link": "https://github.com/shashankdatta/Synthwave",
@@ -87,6 +95,7 @@
     },
     {
       "name": "Groupify",
+      "highlight": "",
       "desc": "An iOS app for collaborative city-based event planning and participant management, integrating multiple APIs with SwiftUI and Core Data for persistent local storage and a scalable, maintainable architecture.",
       "techStack": "Swift, SwiftUI, Core Data, Xcode",
       "link": "",

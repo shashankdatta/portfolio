@@ -72,6 +72,7 @@
   padding: 1.25em 0 !important;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   border-bottom: none !important;
 }
 

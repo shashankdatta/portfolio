@@ -3,6 +3,8 @@
 import styles from "@/styles/Projects.module.css";
 import "@/styles/MyCarousel.css";
 import FolderOpenRoundedIcon from "@mui/icons-material/FolderOpenRounded";
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import Chip from "@mui/material/Chip";
 import Image from "next/image";
 import FadeInSection from "./FadeInSection";
 import "bootstrap/dist/css/bootstrap.css";
@@ -72,6 +74,15 @@ export default function Projects() {
                     <div className={styles["folder-icon"]}>
                       <FolderOpenRoundedIcon fontSize="large" />
                     </div>
+                    {project.highlight && (
+                      <Chip
+                        icon={<AutoAwesomeIcon />}
+                        label={project.highlight}
+                        size="small"
+                        variant="filled"
+                        color="primary"
+                      />
+                    )}
                     <ExternalLinks
                       githubLink={project.link}
                       openLink={project.open}
