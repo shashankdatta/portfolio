@@ -174,27 +174,27 @@ export default function JobList() {
         value={value}
         onChange={handleChange}
       >
-        {Object.entries(experienceItems).map(([key], i) => (
+        {experienceItems.map((item, i) => (
           <StyledTab
-            key={key}
-            label={isMobile ? `0${i + 1}.` : key}
+            key={item.company}
+            label={isMobile ? `0${i + 1}.` : item.company}
             {...a11yProps(i, isMobile)}
           />
         ))}
       </StyledTabs>
 
-      {Object.keys(experienceItems).map((key, i) => (
-        <TabPanel componentType="div" key={key} value={value} index={i} isMobile={isMobile}>
+      {experienceItems.map((item, i) => (
+        <TabPanel componentType="div" key={item.company} value={value} index={i} isMobile={isMobile}>
           <span className={styles["joblist-job-title"]}>
-            {experienceItems[key]["jobTitle"] + " "}
+            {item.jobTitle + " "}
           </span>
-          <span className={styles["joblist-job-company"]}>{key}</span>
+          <span className={styles["joblist-job-company"]}>{item.company}</span>
           <div className={styles["joblist-info"]}>
-            <div>{experienceItems[key]["duration"]}</div>
-            <div>{experienceItems[key]["location"]}</div>
+            <div>{item.duration}</div>
+            <div>{item.location}</div>
           </div>
           <ul className={styles["job-description"]}>
-            {experienceItems[key]["desc"].map((descItem, i) => (
+            {item.desc.map((descItem, i) => (
               <FadeInSection key={i} delay={`${i + 1}00ms`}>
                 <li key={i}>{descItem}</li>
               </FadeInSection>

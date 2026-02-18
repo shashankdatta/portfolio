@@ -1,6 +1,7 @@
 {
-  "Spotlight Projects": {
-    "Swap": {
+  "Spotlight Projects": [
+    {
+      "name": "SWAP",
       "title": "SWAP",
       "desc": "A peer-to-peer course trading platform to serve over 37,000 Virginia Tech students, reducing course schedule management time by 70%.",
       "techStack": "JavaScript, MongoDB, Node.js, React.js, Material UI, Vercel",
@@ -8,7 +9,8 @@
       "open": "https://swap-vt.vercel.app",
       "image": "/assets/swap.png"
     },
-    "Portfolio": {
+    {
+      "name": "Portfolio",
       "title": "Portfolio",
       "desc": "A portfolio website to exhibit and highlight my professional accomplishments, projects, creative abilities, and technical expertise, providing a comprehensive showcase of my skills and achievements.",
       "techStack": "JavaScript, Next.js, Rsuite.js, Node.js, React.js, Material UI, GitHub Pages",
@@ -16,40 +18,79 @@
       "open": "https://shdb.me",
       "image": "/assets/portfolio.png"
     }
-  },
+  ],
 
-  "All Projects": {
-    "RoutePals": {
+  "All Projects": [
+    {
+      "name": "AutoTrust",
+      "desc": "A decentralized car marketplace on Solana enabling secure vehicle ownership transfers and much more. No middlemen, no hidden fees—just trust, speed, and transparency. Won 1st place in the Solana & Blockchain Innovation track at HackNYU 2025.",
+      "techStack": "TypeScript, Solana, Rust, Anchor, Next.js, FastAPI, MongoDB, OpenAI",
+      "link": "https://github.com/shashankdatta/AutoTrust",
+      "open": "https://devpost.com/software/blockchain-dmuro3"
+    },
+    {
+      "name": "Secure Surf",
+      "desc": "A web app that generates a domain security score using breach and password-compromise signals. Won 1st place for Best Data Science Hack at UVA HooHacks 2023.",
+      "techStack": "JavaScript, OpenAI, LangChain, React, Next.js, MongoDB, Chakra UI",
+      "link": "https://github.com/shashankdatta/Secure-Surf",
+      "open": "https://devpost.com/software/secure-surf"
+    },
+    {
+      "name": "RoutePals",
       "desc": "A safety travel companion platform built for 60,000+ NYU students, enabling real-time location tracking, route matching, and chat/alerts to reduce solo travel risk.",
       "techStack": "Python, Django, PostgreSQL, AWS, WebSockets, Leaflet.js, Uber H3, Bootstrap, ZenHub, Travis CI, Coveralls.io",
-      "link": "",
-      "open": ""
+      "link": "https://github.com/shashankdatta/RoutePals",
+      "open": "https://www.youtube.com/watch?v=tHrZaLRgloI"
     },
-    "AutoTrust": {
-      "desc": "A decentralized car marketplace on Solana enabling secure vehicle ownership transfers. Won 1st place in the Solana & Blockchain Innovation track at HackNYU.",
-      "techStack": "TypeScript, Solana, Rust, Anchor, Next.js, FastAPI, MongoDB, OpenAI",
-      "link": "",
-      "open": ""
+    {
+      "name": "G-Helper: Caffeinated",
+      "desc": "An open-source contribution to G-Helper (3.5k+ stars), adding a 'Caffeinated' mode that temporarily prevents system sleep via the Windows SetThreadExecutionState API, with configurable duration, keyboard shortcut support, and full localization integration.",
+      "techStack": "C#, .NET, Windows API, P/Invoke",
+      "link": "https://github.com/shashankdatta/g-helper/tree/caffeinated",
+      "open": "https://github.com/seerge/g-helper/pull/3945"
     },
-    "SWAP": {
+    {
+      "name": "MeddyAI",
+      "desc": "A voice-first medical AI assistant bridging patient-doctor communication gaps with multilingual Q&A, real-time speech-to-speech translation, and personalized health insights via Gemini's 2M token context window. Finalist in the Google Gemini API Developer Competition 2024.",
+      "techStack": "Flutter, Node.js, Firebase, PostgreSQL, Google Gemini API, Google Fit, Epic",
+      "link": "https://github.com/shashankdatta/Meddy",
+      "open": "https://ai.google.dev/competition/projects/meddyai"
+    },
+    {
+      "name": "SWAP",
       "desc": "A peer-to-peer course trading platform to serve over 37,000 Virginia Tech students, reducing course schedule management time by 70%.",
       "techStack": "JavaScript, MongoDB, Node.js, React.js, Material UI, Vercel",
       "link": "https://github.com/rmruss2022/SWAP",
-      "open": "https://swap-vt.vercel.app"
-    },
-    "Secure Surf": {
-      "desc": "A web app that generates a domain security score using breach and password-compromise signals. Won 1st place for Best Data Science Hack at UVA HooHacks.",
-      "techStack": "JavaScript, OpenAI, LangChain, React, Next.js, MongoDB, Chakra UI",
-      "link": "",
       "open": ""
     },
-    "Portfolio": {
+    {
+      "name": "Jobly",
+      "desc": "A big data job search platform leveraging Spark and OpenAI LLM to deliver personalized job recommendations, skill trend analysis, and natural language querying of large-scale job market data.",
+      "techStack": "Python, Spark, Spark NLP, YAKE, Flask, OpenAI API, LangChain, Streamlit, Oxylabs API",
+      "link": "https://github.com/shashankdatta/job-market-analysis",
+      "open": ""
+    },
+    {
+      "name": "Portfolio",
       "title": "Portfolio",
       "desc": "A portfolio website to exhibit and highlight my professional accomplishments, projects, creative abilities, and technical expertise, providing a comprehensive showcase of my skills and achievements.",
       "techStack": "JavaScript, Next.js, Rsuite.js, Node.js, React.js, Material UI, GitHub Pages",
       "link": "https://github.com/shashankdatta/Portfolio.git",
-      "open": "https://shdb.me",
-      "image": "/assets/portfolio.png"
+      "open": ""
+    },
+    {
+      "name": "Synthwave",
+      "desc": "An iOS app enabling users to read and write Mifare NFC cards for contactless sharing of resumes, contact information, and social media profiles.",
+      "techStack": "Swift, SwiftUI, Core Data, Xcode",
+      "link": "https://github.com/shashankdatta/Synthwave",
+      "open": ""
+    },
+    {
+      "name": "Groupify",
+      "desc": "An iOS app for collaborative city-based event planning and participant management, integrating multiple APIs with SwiftUI and Core Data for persistent local storage and a scalable, maintainable architecture.",
+      "techStack": "Swift, SwiftUI, Core Data, Xcode",
+      "link": "",
+      "open": ""
     }
-  }
+  ]
 }

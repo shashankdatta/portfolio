@@ -24,11 +24,11 @@ export default function Projects() {
       {/* <div className={styles["spotlight-container"]}>
         <FadeInSection>
           <Carousel>
-            {Object.keys(spotlightProjects).map((key, i) => (
-              <Carousel.Item key={key}>
+            {spotlightProjects.map((project, i) => (
+              <Carousel.Item key={project.name}>
                 <Image
-                  src={spotlightProjects[key]["image"]}
-                  alt={key}
+                  src={project.image}
+                  alt={project.name}
                   placeholder="empty"
                   className="d-block w-100"
                   sizes="100vw"
@@ -43,16 +43,16 @@ export default function Projects() {
                 />
                 <div className={styles["caption-bg"]}>
                   <Carousel.Caption>
-                    <h3>{spotlightProjects[key]["title"]}</h3>
+                    <h3>{project.title}</h3>
                     <div>
-                      {spotlightProjects[key]["desc"]}
+                      {project.desc}
                       <p className="techstack">
-                        {spotlightProjects[key]["techStack"]}
+                        {project.techStack}
                       </p>
                     </div>
                     <ExternalLinks
-                      githubLink={spotlightProjects[key]["link"]}
-                      openLink={spotlightProjects[key]["open"]}
+                      githubLink={project.link}
+                      openLink={project.open}
                     ></ExternalLinks>
                   </Carousel.Caption>
                 </div>
@@ -64,8 +64,8 @@ export default function Projects() {
 
       <div className="project-container">
         <ul className={styles["projects-grid"]}>
-          {Object.keys(projects).map((key, i) => (
-            <FadeInSection key={key} delay={`${i + 1}00ms`}>
+          {projects.map((project, i) => (
+            <FadeInSection key={project.name} delay={`${i + 1}00ms`}>
               <li className={styles["projects-card"]}>
                 <div className="card-stack">
                   <div className={styles["card-header"]}>
@@ -73,18 +73,18 @@ export default function Projects() {
                       <FolderOpenRoundedIcon fontSize="large" />
                     </div>
                     <ExternalLinks
-                      githubLink={projects[key]["link"]}
-                      openLink={projects[key]["open"]}
+                      githubLink={project.link}
+                      openLink={project.open}
                     ></ExternalLinks>
                   </div>
 
-                  <p className={styles["card-title"]}>{key}</p>
+                  <p className={styles["card-title"]}>{project.name}</p>
                   <div className={styles["card-desc"]}>
-                    {projects[key]["desc"]}
+                    {project.desc}
                   </div>
                 </div>
                 <div className={styles["card-tech"]}>
-                  {projects[key]["techStack"]}
+                  {project.techStack}
                 </div>
               </li>
             </FadeInSection>

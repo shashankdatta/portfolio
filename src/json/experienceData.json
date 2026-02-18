@@ -1,5 +1,6 @@
-{
-  "Spero Institute": {
+[
+  {
+    "company": "Spero Institute",
     "jobTitle": "Full Stack Developer Intern @",
     "duration": "May 2024 - Aug 2024",
     "location": "Austin, TX",
@@ -10,7 +11,8 @@
       "Optimized patient intake using React forms and AWS API Gateway, with early testing indicating potential 40% reduction in sign-up drop-offs based on initial cohort of 150 patients."
     ]
   },
-  "Sanghani Center": {
+  {
+    "company": "Sanghani Center",
     "jobTitle": "Software Engineer Intern @",
     "duration": "Feb 2023 - May 2023",
     "location": "Blacksburg, VA",
@@ -20,7 +22,8 @@
       "Implemented Auth0 authentication and role-based dashboard using React Context, enabling personalized learning paths with early user testing showing 85% satisfaction rate among beta testers."
     ]
   },
-  "Data & Algorithm Analysis": {
+  {
+    "company": "Data & Algorithm Analysis",
     "jobTitle": "Undergraduate Teaching Assistant @",
     "duration": "Jan 2023 - May 2023",
     "location": "Blacksburg, VA",
@@ -29,7 +32,8 @@
       "Delivered over 10 hours of one-on-one support to students each week, resulting in a 25% increase in assignment completion rates."
     ]
   },
-  "Collaborative Robotics Laboratory": {
+  {
+    "company": "Collaborative Robotics Laboratory",
     "jobTitle": "Machine Learning Research Intern @",
     "duration": "May 2022 - Aug 2022",
     "location": "Blacksburg, VA",
@@ -38,7 +42,8 @@
       "Modeled python scripts to localize 2D pixels to 3D real-world coordinates and automated synthetic dataset creation of YCB-dataset objects for real-time detection at 140+ FPS with YOLOv5 PyTorch labels granting time efficiency to improve by 90%."
     ]
   },
-  "4Help": {
+  {
+    "company": "Virginia Tech 4Help",
     "jobTitle": "IT Student Consultant @",
     "duration": "Mar 2022 - Oct 2022",
     "location": "Blacksburg, VA",
@@ -48,8 +53,9 @@
       "Collaborated with a diverse team of IT professionals, contributing to the smooth operation of Virginia Tech's IT services and continuously improving support processes."
     ]
   },
-  "Virginia Tech EcoCar Team": {
-    "jobTitle": "Sub Team Member (Connected and Automated Vehicles) @",
+  {
+    "company": "Virginia Tech EcoCar Team",
+    "jobTitle": "Software Developer (Connected and Automated Vehicles) @",
     "duration": "Jan 2022 - May 2023",
     "location": "Blacksburg, VA",
     "desc": [
@@ -57,7 +63,8 @@
       "Competed in the EcoCAR EV Challenge competition sponsored by the U.S. Department of Energy, General Motors, and MathWorks - validated by achieving SAE L2+ automation in the 2023 Cadillac LYRIQ."
     ]
   },
-  "Teaching Robotics and Engineering": {
+  {
+    "company": "Virginia Tech Teaching Robotics and Engineering",
     "jobTitle": "Vice President & Treasurer @",
     "duration": "Aug 2020 - May 2023",
     "location": "Blacksburg, VA",
@@ -67,4 +74,4 @@
       "Recruited 4 new officers, formed an executive board, and secured a faculty adviser for the club."
     ]
   }
-}
+]
