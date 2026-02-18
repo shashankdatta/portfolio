@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { styled } from "@mui/material/styles";
 import Tabs from "@mui/material/Tabs";
@@ -11,11 +11,8 @@ import FadeInSection from "./FadeInSection";
 import styles from "@/styles/Experience.module.css";
 import experienceItems from "@/json/experienceData.json";
 
-const isMobile =
-  typeof window !== "undefined" ? window.innerWidth < 600 : false;
-
 function TabPanel(props) {
-  const { children, value, index, componentType = "p", ...other } = props;
+  const { children, value, index, componentType = "p", isMobile, ...other } = props;
 
   if (isMobile) {
     return (
@@ -61,7 +58,7 @@ TabPanel.propTypes = {
   componentType: PropTypes.elementType,
 };
 
-function a11yProps(index) {
+function a11yProps(index, isMobile) {
   if (isMobile) {
     return {
       id: `full-width-tab-${index}`,
@@ -150,6 +147,20 @@ const StyledTab = styled(Tab)(({ theme }) => ({
 
 export default function JobList() {
   const [value, setValue] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+    
+    // Set initial value
+    checkMobile();
+    
+    // Listen for resize events
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -168,13 +179,13 @@ export default function JobList() {
           <StyledTab
             key={key}
             label={isMobile ? `0${i + 1}.` : key}
-            {...a11yProps(i)}
+            {...a11yProps(i, isMobile)}
           />
         ))}
       </StyledTabs>
 
       {Object.keys(experienceItems).map((key, i) => (
-        <TabPanel componentType="div" key={key} value={value} index={i}>
+        <TabPanel componentType="div" key={key} value={value} index={i} isMobile={isMobile}>
           <span className={styles["joblist-job-title"]}>
             {experienceItems[key]["jobTitle"] + " "}
           </span>

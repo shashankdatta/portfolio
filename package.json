@@ -10,24 +10,30 @@
     "export": "next export"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "latest",
-    "@mui/material": "^5.13.5",
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/icons-material": "^5.16.9",
+    "@mui/material": "^5.16.9",
+    "@vercel/blob": "^2.2.0",
     "babel-runtime": "^6.26.0",
-    "bootstrap": "^5.3.1",
-    "eslint": "^8.48.0",
-    "eslint-config-next": "^13.4.9",
-    "next": "^13.4.9",
+    "bootstrap": "^5.3.3",
+    "next": "^16.1.6",
     "prop-types": "^15.8.1",
-    "react": "18.2.0",
-    "react-bootstrap": "^2.8.0",
-    "react-dom": "18.2.0",
-    "react-intersection-observer": "^9.5.1",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18.3.1",
+    "react-intersection-observer": "^9.13.1",
     "react-typist": "^2.0.5",
-    "rsuite": "^5.37.0",
-    "sharp": "^0.32.2",
-    "three": "^0.155.0"
+    "rsuite": "^5.69.0",
+    "sharp": "^0.33.5",
+    "three": "^0.171.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^16.1.6"
+  },
+  "overrides": {
+    "ajv": "^8.18.0"
   },
   "browserslist": {
     "production": [

@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
 // define your variable fonts
-const inter = Inter({ subsets: ["latin"], fallback: "sans-serif" });
+const inter = Inter({ subsets: ["latin"], fallback: ["sans-serif"] });
 const myNTR = localFont({
   src: "./NTR-Regular.ttf",
   subsets: ["latin"],
@@ -11,7 +11,7 @@ const myNTR = localFont({
   style: "normal",
   variable: "--font-ntr",
   preload: true,
-  adjustFontFallback: "sans-serif", // ??
+  adjustFontFallback: "Arial",
 });
 
 export { inter, myNTR };

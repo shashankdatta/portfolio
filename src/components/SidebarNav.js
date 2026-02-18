@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Sidenav, Nav } from "rsuite";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -11,11 +11,22 @@ import FadeInSection from "./FadeInSection";
 import ThemeSwitcherToggle from "./ThemeSwitcherToggle";
 import Link from "next/link";
 
-const isMobile =
-  typeof window !== "undefined" ? window.innerWidth < 600 : false;
-
 export default function SidebarNav() {
   const [activeKey, setActiveKey] = useState("1");
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+    
+    // Set initial value
+    checkMobile();
+    
+    // Listen for resize events
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const navlinks = [
     ["intro", "home"],
