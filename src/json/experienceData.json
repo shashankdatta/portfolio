@@ -1,12 +1,23 @@
 {
+  "Spero Institute": {
+    "jobTitle": "Full Stack Developer Intern @",
+    "duration": "May 2024 - Aug 2024",
+    "location": "Austin, TX",
+    "desc": [
+      "Developed an interactive UI using React.js, Node.js, and AWS Lambda functions that streamlined patient transitions across five care levels, projecting 65% reduction in administrative time for 200+ clinicians.",
+      "Designed patient profile interfaces with Figma and implemented using React Bootstrap, targeting an increase in assessment completion from 45% to 92% based on initial user testing with 300+ profiles.",
+      "Engineered access controls using Okta authentication, AWS CloudWatch for audit logging, and Node.js middleware, establishing HIPAA-ready security infrastructure projected to support 400+ clinical staff.",
+      "Optimized patient intake using React forms and AWS API Gateway, with early testing indicating potential 40% reduction in sign-up drop-offs based on initial cohort of 150 patients."
+    ]
+  },
   "Sanghani Center": {
-    "jobTitle": "Undergraduate Research Assistant @",
+    "jobTitle": "Software Engineer Intern @",
     "duration": "Feb 2023 - May 2023",
     "location": "Blacksburg, VA",
     "desc": [
-      "Developed a robust Learning Management System for students using Next.js, React, Auth0, AWS DynamoDB, and Prismic CMS.",
-      "Managed AWS DynamoDB database for storing and retrieving user metadata, course progress, grade level, date of birth, and other information with 99% uptime, low latency, and high throughput.",
-      "Incorporated Prismic CMS for administrators to create and publish content to the application, resulting in a 50% reduction in the time to create and publish course content."
+      "Developed a Next.js-based Learning Management System with React components and Material UI, creating an interactive course interface projected to support 1000+ users in AI technology training.",
+      "Engineered REST API endpoints and database schemas using Prismic CMS headless architecture, reducing content update latency by 60% in initial testing with 50 course modules.",
+      "Implemented Auth0 authentication and role-based dashboard using React Context, enabling personalized learning paths with early user testing showing 85% satisfaction rate among beta testers."
     ]
   },
   "Data & Algorithm Analysis": {
@@ -27,13 +38,23 @@
       "Modeled python scripts to localize 2D pixels to 3D real-world coordinates and automated synthetic dataset creation of YCB-dataset objects for real-time detection at 140+ FPS with YOLOv5 PyTorch labels granting time efficiency to improve by 90%."
     ]
   },
-  "Hokie Electric Vehicle Team": {
-    "jobTitle": "Connected & Automated Vehicles Sub Team Member @",
+  "4Help": {
+    "jobTitle": "IT Student Consultant @",
+    "duration": "Mar 2022 - Oct 2022",
+    "location": "Blacksburg, VA",
+    "desc": [
+      "Provided comprehensive technical support to students, faculty, and staff, addressing software installations, password changes, and network troubleshooting as a 4Help IT Student Consultant at Virginia Tech.",
+      "Delivered exceptional customer service by promptly resolving IT-related issues, demonstrating strong problem-solving skills and effective communication with users.",
+      "Collaborated with a diverse team of IT professionals, contributing to the smooth operation of Virginia Tech's IT services and continuously improving support processes."
+    ]
+  },
+  "Virginia Tech EcoCar Team": {
+    "jobTitle": "Sub Team Member (Connected and Automated Vehicles) @",
     "duration": "Jan 2022 - May 2023",
     "location": "Blacksburg, VA",
     "desc": [
-      "Competed in the EcoCAR EV Challenge competition sponsored by the U.S. Department of Energy, General Motors, and MathWorks – validated by achieving SAE L2+ automation in the 2023 Cadillac LYRIQ.",
-      "Designed a Kalman filter-based sensor fusion algorithm to streamline sensor data and enhance the performance of 4+ stock sensors in Software-in-Loop simulation, resulting in 80% accurate MIO assignment and 90% reduced object detection errors."
+      "Designed a Kalman filter-based sensor fusion algorithm to streamline sensor data and enhance the performance of 4+ stock sensors in SIL simulation, resulting in 80% accurate MIO assignment and 90% reduced object detection errors.",
+      "Competed in the EcoCAR EV Challenge competition sponsored by the U.S. Department of Energy, General Motors, and MathWorks - validated by achieving SAE L2+ automation in the 2023 Cadillac LYRIQ."
     ]
   },
   "Teaching Robotics and Engineering": {
@@ -44,16 +65,6 @@
       "Managed a student organization focused on microcontrollers and programming principles for diverse technical backgrounds.",
       "Delivered a positive learning experience for members, resulting in a 75% growth in membership.",
       "Recruited 4 new officers, formed an executive board, and secured a faculty adviser for the club."
-    ]
-  },
-  "4Help": {
-    "jobTitle": "IT Student Consultant @",
-    "duration": "Mar 2022 - Oct 2022",
-    "location": "Blacksburg, VA",
-    "desc": [
-      "Provided comprehensive technical support to students, faculty, and staff, addressing software installations, password changes, and network troubleshooting as a 4Help IT Student Consultant at Virginia Tech.",
-      "Delivered exceptional customer service by promptly resolving IT-related issues, demonstrating strong problem-solving skills and effective communication with users.",
-      "Collaborated with a diverse team of IT professionals, contributing to the smooth operation of Virginia Tech's IT services and continuously improving support processes."
     ]
   }
 }

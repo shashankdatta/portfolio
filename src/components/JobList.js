@@ -170,12 +170,11 @@ export default function JobList() {
     <DivRoot>
       <StyledTabs
         orientation={isMobile ? null : "vertical"}
-        // variant={isMobile ? "fullWidth" : "scrollable"}
         variant="scrollable"
         value={value}
         onChange={handleChange}
       >
-        {Object.keys(experienceItems).map((key, i) => (
+        {Object.entries(experienceItems).map(([key], i) => (
           <StyledTab
             key={key}
             label={isMobile ? `0${i + 1}.` : key}

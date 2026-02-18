@@ -19,11 +19,29 @@
   },
 
   "All Projects": {
+    "RoutePals": {
+      "desc": "A safety travel companion platform built for 60,000+ NYU students, enabling real-time location tracking, route matching, and chat/alerts to reduce solo travel risk.",
+      "techStack": "Python, Django, PostgreSQL, AWS, WebSockets, Leaflet.js, Uber H3, Bootstrap, ZenHub, Travis CI, Coveralls.io",
+      "link": "",
+      "open": ""
+    },
+    "AutoTrust": {
+      "desc": "A decentralized car marketplace on Solana enabling secure vehicle ownership transfers. Won 1st place in the Solana & Blockchain Innovation track at HackNYU.",
+      "techStack": "TypeScript, Solana, Rust, Anchor, Next.js, FastAPI, MongoDB, OpenAI",
+      "link": "",
+      "open": ""
+    },
     "SWAP": {
       "desc": "A peer-to-peer course trading platform to serve over 37,000 Virginia Tech students, reducing course schedule management time by 70%.",
       "techStack": "JavaScript, MongoDB, Node.js, React.js, Material UI, Vercel",
       "link": "https://github.com/rmruss2022/SWAP",
       "open": "https://swap-vt.vercel.app"
+    },
+    "Secure Surf": {
+      "desc": "A web app that generates a domain security score using breach and password-compromise signals. Won 1st place for Best Data Science Hack at UVA HooHacks.",
+      "techStack": "JavaScript, OpenAI, LangChain, React, Next.js, MongoDB, Chakra UI",
+      "link": "",
+      "open": ""
     },
     "Portfolio": {
       "title": "Portfolio",

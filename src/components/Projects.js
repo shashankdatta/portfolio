@@ -17,9 +17,11 @@ export default function Projects() {
   return (
     <div id="projects" className={styles.projects}>
       <div className={styles["section-header"]}>
-        <span className={styles["section-title"]}>/ software-creations</span>
+        <span className={styles["section-title"]}>/ projects</span>
       </div>
-      <div className={styles["spotlight-container"]}>
+
+      {/* Spotlight Projects */}
+      {/* <div className={styles["spotlight-container"]}>
         <FadeInSection>
           <Carousel>
             {Object.keys(spotlightProjects).map((key, i) => (
@@ -58,7 +60,7 @@ export default function Projects() {
             ))}
           </Carousel>
         </FadeInSection>
-      </div>
+      </div> */}
 
       <div className="project-container">
         <ul className={styles["projects-grid"]}>
