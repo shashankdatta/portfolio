@@ -114,7 +114,7 @@ export default function SidebarNav() {
           </IconButton>
         </FadeInSection>
         <FadeInSection delay={`${navlinks.length + 4}00ms`}>
-          <Link href="https://github.com/shashankdatta" target="_blank">
+          <Link href="https://github.com/shashankbezgam" target="_blank">
             <IconButton
               className="github-icon"
               aria-label="github-icon"
@@ -133,7 +133,7 @@ export default function SidebarNav() {
           </Link>
         </FadeInSection>
         <FadeInSection delay={`${navlinks.length + 5}00ms`}>
-          <Link href="https://www.linkedin.com/in/shashankdatta/" target="_blank">
+          <Link href="https://www.linkedin.com/in/shashankbezgam/" target="_blank">
             <IconButton
               aria-label="linkedin-icon"
               size="small"
