@@ -5,11 +5,25 @@ import { Sidenav, Nav } from "rsuite";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import DownloadIcon from "@mui/icons-material/Download";
 import { IconButton } from "@mui/material";
 import styles from "@/styles/SidebarNav.module.css";
 import FadeInSection from "./FadeInSection";
 import ThemeSwitcherToggle from "./ThemeSwitcherToggle";
 import Link from "next/link";
+
+const RESUME_URL = "https://exwvhdq2io3rbn15.public.blob.vercel-storage.com/Shashank_Bezgam_Resume.pdf";
+
+const handleDownloadResume = () => {
+  const link = document.createElement("a");
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.href = RESUME_URL;
+  link.download = "Shashank_Bezgam_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
 export default function SidebarNav() {
   const [activeKey, setActiveKey] = useState("1");
@@ -64,33 +78,31 @@ export default function SidebarNav() {
       )}
       <div className={styles["sidebar-logos"]}>
         <FadeInSection delay={`${navlinks.length + 2}00ms`}>
-          <IconButton
-            target="_blank"
-            className="github-icon"
-            href="mailto:shashankdattabezgum@gmail.com"
-            aria-label="github-icon"
-            size="small"
-          >
-            <EmailRoundedIcon
-              color="primary"
-              style={{ fontSize: "49px" }}
-              sx={{
-                "&:hover": {
-                  color: "var(--title)",
-                },
-              }}
-            />
-          </IconButton>
+          <Link href="mailto:shashankdattabezgum@gmail.com">
+            <IconButton
+              className="github-icon"
+              aria-label="email-icon"
+              size="small"
+            >
+              <EmailRoundedIcon
+                color="primary"
+                style={{ fontSize: "49px" }}
+                sx={{
+                  "&:hover": {
+                    color: "var(--title)",
+                  },
+                }}
+              />
+            </IconButton>
+          </Link>
         </FadeInSection>
         <FadeInSection delay={`${navlinks.length + 3}00ms`}>
           <IconButton
-            target="_blank"
-            className="github-icon"
-            href="https://github.com/shashankdatta"
-            aria-label="github-icon"
+            onClick={handleDownloadResume}
+            aria-label="download-resume"
             size="small"
           >
-            <GitHubIcon
+            <DownloadIcon
               color="primary"
               style={{ fontSize: "45px" }}
               sx={{
@@ -102,22 +114,41 @@ export default function SidebarNav() {
           </IconButton>
         </FadeInSection>
         <FadeInSection delay={`${navlinks.length + 4}00ms`}>
-          <IconButton
-            target="_blank"
-            href="https://www.linkedin.com/in/shashankdatta/"
-            aria-label="linkedin-icon"
-            size="small"
-          >
-            <LinkedInIcon
-              color="primary"
-              style={{ fontSize: "50px" }}
-              sx={{
-                "&:hover": {
-                  color: "var(--title)",
-                },
-              }}
-            />
-          </IconButton>
+          <Link href="https://github.com/shashankdatta" target="_blank">
+            <IconButton
+              className="github-icon"
+              aria-label="github-icon"
+              size="small"
+            >
+              <GitHubIcon
+                color="primary"
+                style={{ fontSize: "45px" }}
+                sx={{
+                  "&:hover": {
+                    color: "var(--title)",
+                  },
+                }}
+              />
+            </IconButton>
+          </Link>
+        </FadeInSection>
+        <FadeInSection delay={`${navlinks.length + 5}00ms`}>
+          <Link href="https://www.linkedin.com/in/shashankdatta/" target="_blank">
+            <IconButton
+              aria-label="linkedin-icon"
+              size="small"
+            >
+              <LinkedInIcon
+                color="primary"
+                style={{ fontSize: "50px" }}
+                sx={{
+                  "&:hover": {
+                    color: "var(--title)",
+                  },
+                }}
+              />
+            </IconButton>
+          </Link>
         </FadeInSection>
       </div>
     </div>
